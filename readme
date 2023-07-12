@@ -23,30 +23,21 @@ LangChain is a framework for building complex LLM powered apps. It provides func
 
 1. Clone the repo:
 
-   ```sh
    git clone https://github.com/fonckchain/gdrive-chatgpt
-   ```
 
 2. Install the required Python packages:
 
-   ```sh
    pip install openai langchain pypdf2 chroma tiktoken google-api-python-client google-auth-httplib2 google-auth-oauthlib
-   ```
 
 3. Set your OpenAI API key as an environment variable:
 
-   ```sh
    export OPENAI_API_KEY='your-api-key'
-   ```
 
 ## Usage
 
 1. Replace `YOUR_FOLDER_ID` in the `folder_id` variable with your Google Drive folder ID.
-2. Run the script:
 
-   ```sh
-   python chatgpt-gdrive.py
-   ```
+2. "Run python file"
 
 3. When prompted, enter your query.
 
@@ -58,4 +49,4 @@ If you have any questions, feel free to contact me at AFonck@protonmail.com
 
 - [LangChain](https://www.langchain.com/)
 - [OpenAI](https://www.openai.com/)
-- [Greg Baugues](https://www.haihai.ai/gpt-gdrive/)
+- Original guide made by [Greg Baugues](https://www.haihai.ai/gpt-gdrive/)
