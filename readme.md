@@ -23,15 +23,21 @@ LangChain is a framework for building complex LLM powered apps. It provides func
 
 1. Clone the repo:
 
+   ```sh
    git clone https://github.com/fonckchain/gdrive-chatgpt
+   ```
 
 2. Install the required Python packages:
 
+   ```sh
    pip install openai langchain pypdf2 chroma tiktoken google-api-python-client google-auth-httplib2 google-auth-oauthlib
+   ```
 
 3. Set your OpenAI API key as an environment variable:
 
+   ```sh
    export OPENAI_API_KEY='your-api-key'
+   ```
 
 ## Usage
 
