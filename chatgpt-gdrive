@@ -8,12 +8,12 @@ from langchain.vectorstores import Chroma
 folder_id = "1-VRVWgfZOX7ULg6Y-i9bNzU5Ncf3Zxd6"
 loader = GoogleDriveLoader(
     folder_id=folder_id,
-    recursive=False
+    recursive=True
 )
 docs = loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=4000, chunk_overlap=0, separators=[" ", ",", "\n"]
+    chunk_size=3000, chunk_overlap=0, separators=[" ", ",", "\n"]
     )
 
 texts = text_splitter.split_documents(docs)
@@ -22,9 +22,10 @@ db = Chroma.from_documents(texts, embeddings)
 retriever = db.as_retriever()
 
 llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
-qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever)
+qa = RetrievalQA.from_chain_type(llm=llm, chain_type="refine", retriever=retriever)
 
 while True:
     query = input("> ")
-    answer = qa.run(query)
-    print(answer)
+    result = qa.run(query=query)
+    print("Result:")
+    print(result)
