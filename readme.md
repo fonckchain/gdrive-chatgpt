@@ -1,8 +1,10 @@
-# ChatGPT + Google Drive App with LangChain and Python
+<p align="center">
+  <img width="180" src="./public/openai.png" alt="ChatGPT">
+  <h1 align="center">ChatGPT + Google Drive App with LangChain and Python</h1>
+  <p align="center">This project demonstrates how to build a Python app powered by GPT and Google Drive. This combination is made possible by LangChain's Google Drive document loader and serves as a foundation for an infinite number of great apps</p>
+</p>
 
-This project demonstrates how to build a Python app powered by GPT and Google Drive. This combination is made possible by LangChain's Google Drive document loader and serves as a foundation for an infinite number of great apps.
-
-## Why LangChain?
+## 💡 Why LangChain?
 
 LangChain is a framework for building complex LLM powered apps. It provides functionalities like:
 
@@ -11,15 +13,15 @@ LangChain is a framework for building complex LLM powered apps. It provides func
 - Making it easy to swap out your current LLM for a new one without rewriting a lot of code.
 - Providing retries with exponential backoffs for free.
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### 🔍 Prerequisites
 
 - Python 3.6 or higher
 - OpenAI account
 - Google Drive API credentials
 
-### Installation
+### 📦 Installation
 
 1. Clone the repo:
 
@@ -39,7 +41,7 @@ LangChain is a framework for building complex LLM powered apps. It provides func
    export OPENAI_API_KEY='your-api-key'
    ```
 
-## Usage
+## 🛠️ Usage
 
 1. Replace `YOUR_FOLDER_ID` in the `folder_id` variable with your Google Drive folder ID.
 
@@ -47,11 +49,11 @@ LangChain is a framework for building complex LLM powered apps. It provides func
 
 3. When prompted, enter your query.
 
-## Contact
+## 📬 Contact
 
 If you have any questions, feel free to contact me at AFonck@protonmail.com
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 - [LangChain](https://www.langchain.com/)
 - [OpenAI](https://www.openai.com/)
